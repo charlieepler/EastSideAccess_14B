@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1920.0,1080.0">
+
+    <Label layout="70.0,50.0,140.0,20.0" text="ByVlvCt_V50_cmd" halign="left"/>
+
+    <BoundLabel layout="210.0,50.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/AO_ByVlvCt_V50_cmd" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,70.0,140.0,20.0" text="StageUpDelay" halign="left"/>
+
+    <BoundLabel layout="210.0,70.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/StageUpDelay" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,90.0,140.0,20.0" text="Min_CW_Setpoint" halign="left"/>
+
+    <BoundLabel layout="210.0,90.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Min_CW_Setpoint" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,110.0,140.0,20.0" text="CWS_HighTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,110.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CWS_HighTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,130.0,140.0,20.0" text="CWS_LowTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,130.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CWS_LowTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,150.0,140.0,20.0" text="CWR_HighTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,150.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CWR_HighTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,170.0,140.0,20.0" text="CWR_LowTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,170.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CWR_LowTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,190.0,140.0,20.0" text="CT1SumpHiTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,190.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT1SumpHiTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,210.0,140.0,20.0" text="CT2SumpHiTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,210.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT2SumpHiTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,230.0,140.0,20.0" text="CT3SumpHiTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,230.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT3SumpHiTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,250.0,140.0,20.0" text="CT4SumpHiTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,250.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT4SumpHiTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,270.0,140.0,20.0" text="CT1SumpLoTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,270.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT1SumpLoTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,290.0,140.0,20.0" text="CT2SumpLoTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,290.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT2SumpLoTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,310.0,140.0,20.0" text="CT3SumpLoTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,310.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT3SumpLoTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,330.0,140.0,20.0" text="CT4SumpLoTempSp" halign="left"/>
+
+    <BoundLabel layout="210.0,330.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT4SumpLoTempSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,350.0,140.0,20.0" text="StepUpDnDly" halign="left"/>
+
+    <BoundLabel layout="210.0,350.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/StepUpDnDly" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,370.0,140.0,20.0" text="MinOnOffDly" halign="left"/>
+
+    <BoundLabel layout="210.0,370.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/MinOnOffDly" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,390.0,140.0,20.0" text="ProofDelay" halign="left"/>
+
+    <BoundLabel layout="210.0,390.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/ProofDelay" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,410.0,140.0,20.0" text="Speed_3_Out" halign="left"/>
+
+    <BoundLabel layout="210.0,410.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Speed_3_Out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,430.0,140.0,20.0" text="Speed_4_Out" halign="left"/>
+
+    <BoundLabel layout="210.0,430.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Speed_4_Out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,450.0,140.0,20.0" text="Runtime_TowerFan_1" halign="left"/>
+
+    <BoundLabel layout="210.0,450.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Runtime_Load_1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,470.0,140.0,20.0" text="Runtime_TowerFan_2" halign="left"/>
+
+    <BoundLabel layout="210.0,470.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Runtime_Load_2" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,490.0,140.0,20.0" text="Runtime_TowerFan_3" halign="left"/>
+
+    <BoundLabel layout="210.0,490.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Runtime_Load_3" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,510.0,140.0,20.0" text="Runtime_TowerFan_4" halign="left"/>
+
+    <BoundLabel layout="210.0,510.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Runtime_Load_4" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,530.0,140.0,20.0" text="Runtime_Tower_1" halign="left"/>
+
+    <BoundLabel layout="210.0,530.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Runtime_Tower_1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,550.0,140.0,20.0" text="Runtime_Tower_2" halign="left"/>
+
+    <BoundLabel layout="210.0,550.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Runtime_Tower_2" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,570.0,140.0,20.0" text="Runtime_Tower_3" halign="left"/>
+
+    <BoundLabel layout="210.0,570.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Runtime_Tower_3" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,590.0,140.0,20.0" text="Runtime_Tower_4" halign="left"/>
+
+    <BoundLabel layout="210.0,590.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Runtime_Tower_4" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,610.0,140.0,20.0" text="OaBypassSp" halign="left"/>
+
+    <BoundLabel layout="210.0,610.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/OaBypassSp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,630.0,140.0,20.0" text="MinOnOffTime" halign="left"/>
+
+    <BoundLabel layout="210.0,630.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/PumpMinOnOffTime" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,650.0,140.0,20.0" text="AI_CT1_V50_fbk" halign="left"/>
+
+    <BoundLabel layout="210.0,650.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/AI_CT1_V50_fbk" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,670.0,140.0,20.0" text="AI_CT2_V50_fbk" halign="left"/>
+
+    <BoundLabel layout="210.0,670.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/AI_CT2_V50_fbk" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,690.0,140.0,20.0" text="UI6_BypassFbk" halign="left"/>
+
+    <BoundLabel layout="210.0,690.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI6_BypassFbk" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,710.0,140.0,20.0" text="UI9_CT1_SumpTemp" halign="left"/>
+
+    <BoundLabel layout="210.0,710.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI9_CT1_SumpTemp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,730.0,140.0,20.0" text="UI10_CT2_SumpTemp" halign="left"/>
+
+    <BoundLabel layout="210.0,730.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI10_CT2_SumpTemp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,750.0,140.0,20.0" text="UI11_CT3_SumpTemp" halign="left"/>
+
+    <BoundLabel layout="210.0,750.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI11_CT3_SumpTemp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,770.0,140.0,20.0" text="UI12_CT4_SumpTemp" halign="left"/>
+
+    <BoundLabel layout="210.0,770.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI12_CT4_SumpTemp" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,790.0,140.0,20.0" text="UI1_CHWS_flow" halign="left"/>
+
+    <BoundLabel layout="210.0,790.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI1_CHWS_flow" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,810.0,140.0,20.0" text="UI3_OAH" halign="left"/>
+
+    <BoundLabel layout="210.0,810.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI3_OAH" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,830.0,140.0,20.0" text="UI4_OAT" halign="left"/>
+
+    <BoundLabel layout="210.0,830.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI4_OAT" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,850.0,140.0,20.0" text="UI5_CWR" halign="left"/>
+
+    <BoundLabel layout="210.0,850.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI5_CWR" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,870.0,140.0,20.0" text="UI6_CWS" halign="left"/>
+
+    <BoundLabel layout="210.0,870.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI6_CWS" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,890.0,140.0,20.0" text="AO_CT1_V50_spd" halign="left"/>
+
+    <BoundLabel layout="210.0,890.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/AO_CT1_V50_spd" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,910.0,140.0,20.0" text="AO_CT2_V50_spd" halign="left"/>
+
+    <BoundLabel layout="210.0,910.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/AO_CT2_V50_spd" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,930.0,140.0,20.0" text="CW_Setpoint" halign="left"/>
+
+    <BoundLabel layout="210.0,930.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CW_Setpoint" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,50.0,160.0,20.0" text="CT1_V50_VS" halign="left"/>
+
+    <BoundLabel layout="520.0,50.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT1_V50_VS" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,70.0,160.0,20.0" text="CT1_V50_VfdAlm" halign="left"/>
+
+    <BoundLabel layout="520.0,70.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT1_V50_VfdAlm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,90.0,160.0,20.0" text="CT2_V50_VS" halign="left"/>
+
+    <BoundLabel layout="520.0,90.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT2_V50_VS" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,110.0,160.0,20.0" text="CT2_V50_VfdAlm" halign="left"/>
+
+    <BoundLabel layout="520.0,110.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT2_V50_VfdAlm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,130.0,160.0,20.0" text="BFVCT1_V50_open" halign="left"/>
+
+    <BoundLabel layout="520.0,130.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/BFVCT1_V50_open" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,150.0,160.0,20.0" text="BFVCT1_V50_closed" halign="left"/>
+
+    <BoundLabel layout="520.0,150.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/BFVCT1_V50_closed" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,170.0,160.0,20.0" text="CT1_V50_sts" halign="left"/>
+
+    <BoundLabel layout="520.0,170.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT1_V50_sts" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,190.0,160.0,20.0" text="CT2_V50_sts" halign="left"/>
+
+    <BoundLabel layout="520.0,190.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT2_V50_sts" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,210.0,160.0,20.0" text="UI1_CT3_fansts" halign="left"/>
+
+    <BoundLabel layout="520.0,210.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI1_CT3_fansts" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,230.0,160.0,20.0" text="UI2_CT4_fansts" halign="left"/>
+
+    <BoundLabel layout="520.0,230.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI2_CT4_fansts" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,250.0,160.0,20.0" text="UI7_Bypass_closed" halign="left"/>
+
+    <BoundLabel layout="520.0,250.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI7_Bypass_closed" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,270.0,160.0,20.0" text="UI8_Bypass_open" halign="left"/>
+
+    <BoundLabel layout="520.0,270.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/UI8_Bypass_open" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,290.0,160.0,20.0" text="CT1_V50_ena" halign="left"/>
+
+    <BoundLabel layout="520.0,290.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT1_V50_ena" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,310.0,160.0,20.0" text="BFVCT1_V50_cmd" halign="left"/>
+
+    <BoundLabel layout="520.0,310.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/BFVCT1_V50_cmd" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,330.0,160.0,20.0" text="CT2_V50_ena" halign="left"/>
+
+    <BoundLabel layout="520.0,330.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT2_V50_ena" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,350.0,160.0,20.0" text="BFVCT2_V50_cmd" halign="left"/>
+
+    <BoundLabel layout="520.0,350.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/BFVCT2_V50_cmd" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,370.0,160.0,20.0" text="CWS_HighTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,370.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CWS_HighTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,390.0,160.0,20.0" text="CWS_LowTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,390.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CWS_LowTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,410.0,160.0,20.0" text="CWR_LowTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,410.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CWR_LowTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,430.0,160.0,20.0" text="CWR_HighTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,430.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CWR_HighTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,450.0,160.0,20.0" text="CT1_SumpHighTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,450.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT1_SumpHighTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,470.0,160.0,20.0" text="CT1_SumpLowTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,470.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT1_SumpLowTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,490.0,160.0,20.0" text="CT2_SumpHighTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,490.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT2_SumpHighTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,510.0,160.0,20.0" text="CT4_SumpHighTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,510.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT4_SumpHighTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,530.0,160.0,20.0" text="CT2_SumpLowTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,530.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT2_SumpLowTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,550.0,160.0,20.0" text="CT4_SumpLowTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,550.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT4_SumpLowTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,570.0,160.0,20.0" text="CT1_ValveFault" halign="left"/>
+
+    <BoundLabel layout="520.0,570.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT1_ValveFault" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,590.0,160.0,20.0" text="CT2_ValveFault" halign="left"/>
+
+    <BoundLabel layout="520.0,590.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT2_ValveFault" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,610.0,160.0,20.0" text="CT3_Open" halign="left"/>
+
+    <BoundLabel layout="520.0,610.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT3_Open" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,630.0,160.0,20.0" text="CallFor_P2" halign="left"/>
+
+    <BoundLabel layout="520.0,630.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CallFor_P2" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,650.0,160.0,20.0" text="CT4_Open" halign="left"/>
+
+    <BoundLabel layout="520.0,650.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT4_Open" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,670.0,160.0,20.0" text="CallFor_P3" halign="left"/>
+
+    <BoundLabel layout="520.0,670.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CallFor_P3" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,690.0,160.0,20.0" text="Tower_1_Failed" halign="left"/>
+
+    <BoundLabel layout="520.0,690.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Tower_1_Failed" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,710.0,160.0,20.0" text="Tower_2_Failed" halign="left"/>
+
+    <BoundLabel layout="520.0,710.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Tower_2_Failed" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,730.0,160.0,20.0" text="Load_3_Out" halign="left"/>
+
+    <BoundLabel layout="520.0,730.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Load_3_Out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,750.0,160.0,20.0" text="Load_4_Out" halign="left"/>
+
+    <BoundLabel layout="520.0,750.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Load_4_Out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,770.0,160.0,20.0" text="Vibe_Tower_3" halign="left"/>
+
+    <BoundLabel layout="520.0,770.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Vibe_Tower_3" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,790.0,160.0,20.0" text="Fault_Tower_3" halign="left"/>
+
+    <BoundLabel layout="520.0,790.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Fault_Tower_3" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,810.0,160.0,20.0" text="Vibe_Tower_4" halign="left"/>
+
+    <BoundLabel layout="520.0,810.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Vibe_Tower_4" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,830.0,160.0,20.0" text="Fault_Tower_4" halign="left"/>
+
+    <BoundLabel layout="520.0,830.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Fault_Tower_4" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,850.0,160.0,20.0" text="Fault_Valve_3" halign="left"/>
+
+    <BoundLabel layout="520.0,850.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Fault_Valve_3" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,870.0,160.0,20.0" text="Fault_Valve_4" halign="left"/>
+
+    <BoundLabel layout="520.0,870.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Fault_Valve_4" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,890.0,160.0,20.0" text="Tower_3_Failed" halign="left"/>
+
+    <BoundLabel layout="520.0,890.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Tower_3_Failed" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,910.0,160.0,20.0" text="Tower_4_Failed" halign="left"/>
+
+    <BoundLabel layout="520.0,910.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Tower_4_Failed" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,930.0,160.0,20.0" text="Fail_Load_1" halign="left"/>
+
+    <BoundLabel layout="520.0,930.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Fail_Load_1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,950.0,160.0,20.0" text="Fail_Load_2" halign="left"/>
+
+    <BoundLabel layout="520.0,950.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Fail_Load_2" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,970.0,160.0,20.0" text="Fail_Load_3" halign="left"/>
+
+    <BoundLabel layout="520.0,970.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Fail_Load_3" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,950.0,140.0,20.0" text="Fail_Load_4" halign="left"/>
+
+    <BoundLabel layout="210.0,950.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/Fail_Load_4" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,970.0,140.0,20.0" text="CallFor_P1" halign="left"/>
+
+    <BoundLabel layout="210.0,970.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CallFor_P1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,990.0,140.0,20.0" text="TowerValveOpen_CO2" halign="left"/>
+
+    <BoundLabel layout="210.0,990.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/TowerValveOpen_CO2" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="70.0,1010.0,140.0,20.0" text="CW_Enable" halign="left"/>
+
+    <BoundLabel layout="210.0,1010.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CW_Enable" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,990.0,160.0,20.0" text="CT3_SumpHighTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,990.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT3_SumpHighTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="350.0,1010.0,160.0,20.0" text="CT3_SumpLowTempAlarm" halign="left"/>
+
+    <BoundLabel layout="520.0,1010.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C1/points/CT3_SumpLowTempAlarm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="370.0,10.0,400.0,30.0" text="Cooling Towers" font="24.0pt SansSerif"/>
+
+    <Label layout="760.0,50.0,150.0,20.0" text="CtFanSpeed_3_In" halign="left"/>
+
+    <BoundLabel layout="910.0,50.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CtFanSpeed_3_In" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,70.0,150.0,20.0" text="CtFanSpeed_4_In" halign="left"/>
+
+    <BoundLabel layout="910.0,70.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CtFanSpeed_4_In" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,90.0,150.0,20.0" text="AI_CT3_V50_fbk" halign="left"/>
+
+    <BoundLabel layout="910.0,90.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/AI_CT3_V50_fbk" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,110.0,150.0,20.0" text="AI_CT4_V50_fbk" halign="left"/>
+
+    <BoundLabel layout="910.0,110.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/AI_CT4_V50_fbk" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,130.0,150.0,20.0" text="AO_CT3_V50_spd" halign="left"/>
+
+    <BoundLabel layout="910.0,130.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/AO_CT3_V50_spd" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,150.0,150.0,20.0" text="AO_CT4_V50_spd" halign="left"/>
+
+    <BoundLabel layout="910.0,150.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/AO_CT4_V50_spd" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,170.0,150.0,20.0" text="BI_CT3_V50_VS" halign="left"/>
+
+    <BoundLabel layout="910.0,170.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BI_CT3_V50_VS" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,190.0,150.0,20.0" text="BI_CT3_V50_VfdAlm" halign="left"/>
+
+    <BoundLabel layout="910.0,190.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BI_CT3_V50_VfdAlm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,210.0,150.0,20.0" text="BI_CT4_V50_VS" halign="left"/>
+
+    <BoundLabel layout="910.0,210.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BI_CT4_V50_VS" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,230.0,150.0,20.0" text="BI_CT4_V50_VfdAlm" halign="left"/>
+
+    <BoundLabel layout="910.0,230.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BI_CT4_V50_VfdAlm" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,250.0,150.0,20.0" text="BI_BFVCT3_V50_open" halign="left"/>
+
+    <BoundLabel layout="910.0,250.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BI_BFVCT3_V50_open" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,270.0,150.0,20.0" text="BI_BFVCT3_V50_closed" halign="left"/>
+
+    <BoundLabel layout="910.0,270.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BI_BFVCT3_V50_closed" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,290.0,150.0,20.0" text="BI_BFVCT4_V50_open" halign="left"/>
+
+    <BoundLabel layout="910.0,290.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BI_BFVCT4_V50_open" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,310.0,150.0,20.0" text="BI_BFVCT4_V50_closed" halign="left"/>
+
+    <BoundLabel layout="910.0,310.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BI_BFVCT4_V50_closed" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,330.0,150.0,20.0" text="BO_CT3_V50_ena" halign="left"/>
+
+    <BoundLabel layout="910.0,330.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BO_CT3_V50_ena" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,350.0,150.0,20.0" text="BO_BFVCT3_V50_cmd" halign="left"/>
+
+    <BoundLabel layout="910.0,350.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BO_BFVCT3_V50_cmd" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,370.0,150.0,20.0" text="BO_BFVCT4_V50_cmd" halign="left"/>
+
+    <BoundLabel layout="910.0,370.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BO_BFVCT4_V50_cmd" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,390.0,150.0,20.0" text="BO_CT4_V50_ena" halign="left"/>
+
+    <BoundLabel layout="910.0,390.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BO_CT4_V50_ena" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,410.0,150.0,20.0" text="AV_CT3_ValveFault" halign="left"/>
+
+    <BoundLabel layout="910.0,410.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/AV_CT3_ValveFault" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,430.0,150.0,20.0" text="BV_CT4_ValveFault" halign="left"/>
+
+    <BoundLabel layout="910.0,430.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BV_CT4_ValveFault" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,450.0,150.0,20.0" text="CtFan_3_Ena" halign="left"/>
+
+    <BoundLabel layout="910.0,450.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CtFan_3_Ena" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,470.0,150.0,20.0" text="CtFan_4_Ena" halign="left"/>
+
+    <BoundLabel layout="910.0,470.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CtFan_4_Ena" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,490.0,150.0,20.0" text="CtValve_4_Ena" halign="left"/>
+
+    <BoundLabel layout="910.0,490.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CtValve_4_Ena" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,510.0,150.0,20.0" text="CtValve_3_Ena" halign="left"/>
+
+    <BoundLabel layout="910.0,510.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CtValve_3_Ena" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,530.0,150.0,20.0" text="CT3_V50_VS_out" halign="left"/>
+
+    <BoundLabel layout="910.0,530.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CT3_V50_VS_out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,550.0,150.0,20.0" text="CT4_V50_VS_out" halign="left"/>
+
+    <BoundLabel layout="910.0,550.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CT4_V50_VS_out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,570.0,150.0,20.0" text="CT3_V50_VfdAlm_out" halign="left"/>
+
+    <BoundLabel layout="910.0,570.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CT3_V50_VfdAlm_out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,590.0,150.0,20.0" text="CT4_V50_VfdAlm_out" halign="left"/>
+
+    <BoundLabel layout="910.0,590.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/CT4_V50_VfdAlm_out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,610.0,150.0,20.0" text="BFVCT3_V50_open_out" halign="left"/>
+
+    <BoundLabel layout="910.0,610.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BFVCT3_V50_open_out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,630.0,150.0,20.0" text="BFVCT3_V50_close_out" halign="left"/>
+
+    <BoundLabel layout="910.0,630.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BFVCT3_V50_close_out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,650.0,150.0,20.0" text="BFVCT4_V50_open_out" halign="left"/>
+
+    <BoundLabel layout="910.0,650.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BFVCT4_V50_open_out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,670.0,150.0,20.0" text="BFVCT4_V50_close_out" halign="left"/>
+
+    <BoundLabel layout="910.0,670.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/BFVCT4_V50_close_out" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="760.0,690.0,150.0,20.0" text="TowerValveOpen" halign="left"/>
+
+    <BoundLabel layout="910.0,690.0,100.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/points/TowerValveOpen" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

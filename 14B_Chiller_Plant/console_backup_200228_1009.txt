@@ -1,0 +1,89 @@
+INFO [nre] Launching Niagara Runtime Environment
+INFO [10:07:25 28-Feb-20 EST][nre] Booting
+INFO [10:07:25 28-Feb-20 EST][sys] Logging initialized
+INFO [10:07:30 28-Feb-20 EST][sys.registry] Up-to-date [165ms]
+INFO [10:07:31 28-Feb-20 EST][sys.registry] Loaded [86ms]
+INFO [10:07:32 28-Feb-20 EST][sys] Niagara runtime booted ("C:\Honeywell\WEBStation-N4-4.6.96.28") on Win-C5C2-A071-682C-ADE5 (9192ms)
+INFO [10:07:32 28-Feb-20 EST][sys] Loading "C:\ProgramData\Niagara4.6\Webs\stations\ESA_Chiller_Plant\config.bog"...
+INFO [10:07:36 28-Feb-20 EST][sys] Loaded (4140ms)
+INFO [10:07:39 28-Feb-20 EST][alarm.database] Loading...
+INFO [10:07:39 28-Feb-20 EST][alarm.database] Loaded [15ms, 8 alarms, 8 pages]
+INFO [10:07:39 28-Feb-20 EST][sys] Services Initialized (1796ms)
+INFO [10:07:39 28-Feb-20 EST][sys.mixin] Updated [0ms]
+INFO [10:07:39 28-Feb-20 EST][sys.mixin] Updated [0ms]
+INFO [10:07:41 28-Feb-20 EST][history.db] Starting async warmup of history config index...
+INFO [10:07:41 28-Feb-20 EST][history.db] Async history config index warmup completed in 16 ms.
+INFO [10:07:42 28-Feb-20 EST][web] Jetty web server started on HTTPS port 443 and HTTP port 80
+javax.baja.sys.ServiceNotFoundException: platMstp:BacnetMstpPlatformService
+	at com.tridium.sys.service.ServiceManager.getService(ServiceManager.java:61)
+	at javax.baja.sys.Sys.getService(Sys.java:384)
+	at com.tridium.bacnet.stack.link.mstp.BBacnetMstpLinkLayer.getPlatformService(BBacnetMstpLinkLayer.java:568)
+	at com.tridium.bacnet.stack.link.mstp.BBacnetMstpLinkLayer.linkCommStart(BBacnetMstpLinkLayer.java:589)
+	at com.tridium.bacnet.stack.link.BBacnetLinkLayer.linkStart(BBacnetLinkLayer.java:92)
+	at com.tridium.bacnet.stack.network.BNetworkPort.networkReady(BNetworkPort.java:754)
+	at com.tridium.bacnet.stack.network.BBacnetNetworkLayer.networkReady(BBacnetNetworkLayer.java:536)
+	at javax.baja.bacnet.BBacnetNetwork.descendantsStarted(BBacnetNetwork.java:546)
+	at com.tridium.sys.engine.EngineUtil.descendantsStarted(EngineUtil.java:202)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:96)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:2001)
+	at javax.baja.sys.BComponent.start(BComponent.java:301)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:92)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:2001)
+	at javax.baja.sys.BComponent.start(BComponent.java:301)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:92)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:2001)
+	at javax.baja.sys.BComponent.start(BComponent.java:301)
+	at com.tridium.sys.station.Station.startStation(Station.java:340)
+	at com.tridium.sys.station.Station.bootStation(Station.java:111)
+	at com.tridium.sys.station.Station.main(Station.java:1140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.tridium.sys.Nre.runClass(Nre.java:393)
+	at com.tridium.sys.Nre.main(Nre.java:228)
+	at com.tridium.sys.Nre.bootstrap(Nre.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.tridium.nre.bootstrap.Bootstrap.Main(Bootstrap.java:104)
+INFO [10:07:42 28-Feb-20 EST][fox] FOX server started on port [1911]
+INFO [10:07:43 28-Feb-20 EST][sys] Niagara Runtime Environment: 4.6.96.28.1
+INFO [10:07:43 28-Feb-20 EST][sys] *** Station Started (4297ms) [20253ms total] ***
+niagara>INFO [10:07:44 28-Feb-20 EST][fox] FOXS server started on port [4911]
+INFO [10:07:56 28-Feb-20 EST][fox] Opened: 117cb5e45981f7d298298c54d8f97b1f7f869f2137455234bc <- f12d39ba7d1381b90434e63b24f33cd962b5903158879b6ac5 :: Workbench @ CHARLIEWORKBENC
+SEVERE [10:08:06 28-Feb-20 EST][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [10:08:06 28-Feb-20 EST][bacnet.client] TransactionException pinging BacnetDevice {ATC_V50_CT_C1}: Transaction:timeout: invoke ID 0
+SEVERE [10:08:18 28-Feb-20 EST][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [10:08:18 28-Feb-20 EST][bacnet.client] TransactionException pinging BacnetDevice {ATC_V50_CT_C2}: Transaction:timeout: invoke ID 0
+SEVERE [10:08:30 28-Feb-20 EST][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [10:08:30 28-Feb-20 EST][bacnet.client] TransactionException pinging BacnetDevice {TEC_V501_2_C1}: Transaction:timeout: invoke ID 0
+SEVERE [10:08:42 28-Feb-20 EST][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [10:08:42 28-Feb-20 EST][bacnet.client] TransactionException pinging BacnetDevice {ATC_49_2_C1}: Transaction:timeout: invoke ID 0
+SEVERE [10:08:54 28-Feb-20 EST][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [10:08:54 28-Feb-20 EST][bacnet.client] TransactionException pinging BacnetDevice {ATC_49_2_C3}: Transaction:timeout: invoke ID 0
+SEVERE [10:09:06 28-Feb-20 EST][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [10:09:06 28-Feb-20 EST][bacnet.client] TransactionException pinging BacnetDevice {ATC_49_2_C5}: Transaction:timeout: invoke ID 0
+SEVERE [10:09:18 28-Feb-20 EST][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [10:09:18 28-Feb-20 EST][bacnet.client] TransactionException pinging BacnetDevice {ATC_49_2_C6}: Transaction:timeout: invoke ID 0
+INFO [10:09:21 28-Feb-20 EST][console] Quit
+INFO [10:09:21 28-Feb-20 EST][sys] Saving station...
+INFO [10:09:23 28-Feb-20 EST][sys] Saved C:\ProgramData\Niagara4.6\Webs\stations\ESA_Chiller_Plant\config.bog (1282ms)
+INFO [10:09:23 28-Feb-20 EST][fox] Closed: 117cb5e45981f7d298298c54d8f97b1f7f869f2137455234bc <- f12d39ba7d1381b90434e63b24f33cd962b5903158879b6ac5 :: Workbench @ CHARLIEWORKBENC
+SEVERE [10:09:23 28-Feb-20 EST][sys.engine] Cannot activate link "Indirect: h:e520.CT3_V50_VS_out_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink1.Vibe_Tower_3_presentValue": Source slot does not exist
+SEVERE [10:09:23 28-Feb-20 EST][sys.engine] Cannot activate link "Indirect: h:e520.CT3_V50_VfdAlm_out_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink2.Fault_Tower_3_presentValue": Source slot does not exist
+SEVERE [10:09:23 28-Feb-20 EST][sys.engine] Cannot activate link "Indirect: h:e520.CT4_V50_VS_out_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink3.Vibe_Tower_4_presentValue": Source slot does not exist
+SEVERE [10:09:23 28-Feb-20 EST][sys.engine] Cannot activate link "Indirect: h:e520.CT4_V50_VfdAlm_out_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink4.Fault_Tower_4_presentValue": Source slot does not exist
+SEVERE [10:09:23 28-Feb-20 EST][sys.engine] Cannot activate link "Indirect: h:e520.AV_CT3_ValveFault_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink5.Fault_Valve_3_presentValue": Source slot does not exist
+SEVERE [10:09:23 28-Feb-20 EST][sys.engine] Cannot activate link "Indirect: h:e520.BV_CT4_ValveFault_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink6.Fault_Valve_4_presentValue": Source slot does not exist
+SEVERE [10:09:23 28-Feb-20 EST][sys.engine] Cannot activate link "Indirect: h:ea8e.BV_HX_Flow_OK_presentValue -> slot:/Drivers/BacnetNetwork/ATC_49_2_C1/obsolete_link_list/obsoletelink1.HX_Flow_Ok_presentValue": Source slot does not exist
+INFO [10:09:23 28-Feb-20 EST][sys] Station stopped
+INFO [10:09:23 28-Feb-20 EST][fox] Service stopped
+INFO [10:09:23 28-Feb-20 EST][fox] FOXS server stopped on port [4911]
+INFO [10:09:23 28-Feb-20 EST][fox] FOX server stopped on port [1911]
+INFO [10:09:23 28-Feb-20 EST][web] Jetty stopped.
+INFO [10:09:25 28-Feb-20 EST][sys] Services stopped
+INFO [10:09:25 28-Feb-20 EST][sys] *** Station shutdown ***
+
+

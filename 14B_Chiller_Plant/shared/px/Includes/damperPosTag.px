@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="80.0,80.0" background="#e0e0e0">
+
+    <BoundLabel layout="0.0,20.0,80.0,40.0" font="12.0pt Tahoma" foreground="black">
+      <ValueBinding ord="$(esSts)/DamperStatus">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IEnumToSimple name="background" map="gx:Brush 2=#ff8080;3=#ffa040;1=#80ff80;default=null;"/>
+        <IEnumToSimple name="blink" map="baja:Boolean 0,1,2=false;3=true;default=false;"/>
+        <IEnumToSimple name="border" map="bajaui:Border 3=1.0 solid red;default=0.0 none black;"/>
+      </ValueBinding>
+      <BoundLabelBinding ord="$(esSts)/DamperStatus"/>
+    </BoundLabel>
+
+    <BoundLabel layout="0.0,40.0,80.0,40.0" font="12.0pt Tahoma" foreground="#4040ff">
+      <ValueBinding ord="$(Ena)/Command">
+        <ObjectToString name="text" format="CMD:\n%out.value%"/>
+      </ValueBinding>
+      <BoundLabelBinding ord="$(Ena)/Command"/>
+    </BoundLabel>
+
+    <BoundLabel layout="0.0,0.0,80.0,20.0" font="underline 12.0pt Tahoma" foreground="black">
+      <BoundLabelBinding ord="$(name)/DamperName">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

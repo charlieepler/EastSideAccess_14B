@@ -1,0 +1,180 @@
+INFO [nre] Launching Niagara Runtime Environment
+INFO [15:01:10 09-Mar-20 EDT][nre] Booting
+INFO [15:01:10 09-Mar-20 EDT][sys] Logging initialized
+INFO [15:01:14 09-Mar-20 EDT][sys.registry] Up-to-date [132ms]
+INFO [15:01:15 09-Mar-20 EDT][sys.registry] Loaded [82ms]
+INFO [15:01:16 09-Mar-20 EDT][sys] Niagara runtime booted ("C:\Honeywell\WEBStation-N4-4.6.96.28") on Win-C5C2-A071-682C-ADE5 (8190ms)
+INFO [15:01:16 09-Mar-20 EDT][sys] Loading "C:\ProgramData\Niagara4.6\Webs\stations\ESA_Chiller_Plant\config.bog"...
+INFO [15:01:20 09-Mar-20 EDT][sys] Loaded (3984ms)
+INFO [15:01:22 09-Mar-20 EDT][alarm.database] Loading...
+INFO [15:01:22 09-Mar-20 EDT][alarm.database] Loaded [15ms, 8 alarms, 8 pages]
+INFO [15:01:22 09-Mar-20 EDT][sys] Services Initialized (1156ms)
+INFO [15:01:22 09-Mar-20 EDT][sys.mixin] Updated [16ms]
+INFO [15:01:22 09-Mar-20 EDT][sys.mixin] Updated [0ms]
+INFO [15:01:24 09-Mar-20 EDT][history.db] Starting async warmup of history config index...
+INFO [15:01:24 09-Mar-20 EDT][history.db] Async history config index warmup completed in 62 ms.
+INFO [15:01:24 09-Mar-20 EDT][web] Jetty web server started on HTTPS port 443 and HTTP port 80
+SEVERE [15:01:25 09-Mar-20 EDT][bacnet.link.ip] Cannot bind datagram socket on port 47808
+java.net.BindException: Cannot assign requested address: Cannot bind
+	at java.net.DualStackPlainDatagramSocketImpl.socketBind(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.bind0(DualStackPlainDatagramSocketImpl.java:84)
+	at java.net.AbstractPlainDatagramSocketImpl.bind(AbstractPlainDatagramSocketImpl.java:93)
+	at java.net.DatagramSocket.bind(DatagramSocket.java:392)
+	at java.net.DatagramSocket.<init>(DatagramSocket.java:242)
+	at java.net.DatagramSocket.<init>(DatagramSocket.java:299)
+	at com.tridium.bacnet.stack.link.ip.BBacnetIpLinkLayer.startReception(BBacnetIpLinkLayer.java:1258)
+	at com.tridium.bacnet.stack.link.ip.BBacnetIpLinkLayer.linkCommStart(BBacnetIpLinkLayer.java:574)
+	at com.tridium.bacnet.stack.link.BBacnetLinkLayer.linkStart(BBacnetLinkLayer.java:92)
+	at com.tridium.bacnet.stack.network.BNetworkPort.networkReady(BNetworkPort.java:754)
+	at com.tridium.bacnet.stack.network.BBacnetNetworkLayer.networkReady(BBacnetNetworkLayer.java:536)
+	at javax.baja.bacnet.BBacnetNetwork.descendantsStarted(BBacnetNetwork.java:546)
+	at com.tridium.sys.engine.EngineUtil.descendantsStarted(EngineUtil.java:202)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:96)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:2001)
+	at javax.baja.sys.BComponent.start(BComponent.java:301)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:92)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:2001)
+	at javax.baja.sys.BComponent.start(BComponent.java:301)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:92)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:2001)
+	at javax.baja.sys.BComponent.start(BComponent.java:301)
+	at com.tridium.sys.station.Station.startStation(Station.java:340)
+	at com.tridium.sys.station.Station.bootStation(Station.java:111)
+	at com.tridium.sys.station.Station.main(Station.java:1140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.tridium.sys.Nre.runClass(Nre.java:393)
+	at com.tridium.sys.Nre.main(Nre.java:228)
+	at com.tridium.sys.Nre.bootstrap(Nre.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.tridium.nre.bootstrap.Bootstrap.Main(Bootstrap.java:104)
+
+javax.baja.sys.ServiceNotFoundException: platMstp:BacnetMstpPlatformService
+	at com.tridium.sys.service.ServiceManager.getService(ServiceManager.java:61)
+	at javax.baja.sys.Sys.getService(Sys.java:384)
+	at com.tridium.bacnet.stack.link.mstp.BBacnetMstpLinkLayer.getPlatformService(BBacnetMstpLinkLayer.java:568)
+	at com.tridium.bacnet.stack.link.mstp.BBacnetMstpLinkLayer.linkCommStart(BBacnetMstpLinkLayer.java:589)
+	at com.tridium.bacnet.stack.link.BBacnetLinkLayer.linkStart(BBacnetLinkLayer.java:92)
+	at com.tridium.bacnet.stack.network.BNetworkPort.networkReady(BNetworkPort.java:754)
+	at com.tridium.bacnet.stack.network.BBacnetNetworkLayer.networkReady(BBacnetNetworkLayer.java:536)
+	at javax.baja.bacnet.BBacnetNetwork.descendantsStarted(BBacnetNetwork.java:546)
+	at com.tridium.sys.engine.EngineUtil.descendantsStarted(EngineUtil.java:202)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:96)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:2001)
+	at javax.baja.sys.BComponent.start(BComponent.java:301)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:92)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:2001)
+	at javax.baja.sys.BComponent.start(BComponent.java:301)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:92)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:2001)
+	at javax.baja.sys.BComponent.start(BComponent.java:301)
+	at com.tridium.sys.station.Station.startStation(Station.java:340)
+	at com.tridium.sys.station.Station.bootStation(Station.java:111)
+	at com.tridium.sys.station.Station.main(Station.java:1140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.tridium.sys.Nre.runClass(Nre.java:393)
+	at com.tridium.sys.Nre.main(Nre.java:228)
+	at com.tridium.sys.Nre.bootstrap(Nre.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.tridium.nre.bootstrap.Bootstrap.Main(Bootstrap.java:104)
+INFO [15:01:26 09-Mar-20 EDT][fox] FOX server started on port [1911]
+INFO [15:01:27 09-Mar-20 EDT][sys] Niagara Runtime Environment: 4.6.96.28.1
+INFO [15:01:27 09-Mar-20 EDT][sys] *** Station Started (4891ms) [18967ms total] ***
+niagara>SEVERE [15:01:27 09-Mar-20 EDT][bacnet.link.ip] Cannot send Bacnet/IP packet!
+java.net.BindException: Cannot assign requested address: Datagram send failed
+	at java.net.DualStackPlainDatagramSocketImpl.socketSend(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.send(DualStackPlainDatagramSocketImpl.java:136)
+	at java.net.DatagramSocket.send(DatagramSocket.java:693)
+	at com.tridium.bacnet.stack.link.ip.BBacnetIpLinkLayer.sendBvllMessage(BBacnetIpLinkLayer.java:1925)
+	at com.tridium.bacnet.stack.link.ip.BBacnetIpLinkLayer.sendBvllMessage(BBacnetIpLinkLayer.java:1890)
+	at com.tridium.bacnet.stack.link.ip.BBacnetIpLinkLayer.sendRequest(BBacnetIpLinkLayer.java:1122)
+	at com.tridium.bacnet.stack.network.BNetworkPort.sendToLink(BNetworkPort.java:659)
+	at com.tridium.bacnet.stack.network.BBacnetNetworkLayer.sendToPort(BBacnetNetworkLayer.java:1564)
+	at com.tridium.bacnet.stack.network.BBacnetNetworkLayer.sendRequest(BBacnetNetworkLayer.java:692)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine$Idle.processApplication(ClientStateMachine.java:138)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine$Idle.process(ClientStateMachine.java:113)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine.process(ClientStateMachine.java:53)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine.route(ClientStateMachine.java:35)
+	at com.tridium.bacnet.stack.transport.ApplicationPdu.run(ApplicationPdu.java:89)
+	at javax.baja.util.Worker.process(Worker.java:168)
+	at javax.baja.util.Worker$Processor.run(Worker.java:141)
+	at java.lang.Thread.run(Thread.java:748)
+
+INFO [15:01:28 09-Mar-20 EDT][fox] FOXS server started on port [4911]
+SEVERE [15:01:50 09-Mar-20 EDT][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [15:01:50 09-Mar-20 EDT][bacnet.client] TransactionException pinging BacnetDevice {ATC_V50_CT_C1}: Transaction:timeout: invoke ID 0
+SEVERE [15:02:02 09-Mar-20 EDT][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [15:02:02 09-Mar-20 EDT][bacnet.client] TransactionException pinging BacnetDevice {ATC_V50_CT_C2}: Transaction:timeout: invoke ID 0
+SEVERE [15:02:14 09-Mar-20 EDT][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [15:02:14 09-Mar-20 EDT][bacnet.client] TransactionException pinging BacnetDevice {TEC_V501_2_C1}: Transaction:timeout: invoke ID 0
+SEVERE [15:02:26 09-Mar-20 EDT][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [15:02:26 09-Mar-20 EDT][bacnet.client] TransactionException pinging BacnetDevice {ATC_49_2_C1}: Transaction:timeout: invoke ID 0
+SEVERE [15:02:38 09-Mar-20 EDT][bacnet.transport] Transaction Timed out! invokeId 0
+INFO [15:02:38 09-Mar-20 EDT][bacnet.client] TransactionException pinging BacnetDevice {ATC_49_2_C3}: Transaction:timeout: invoke ID 0
+INFO [15:02:44 09-Mar-20 EDT][console] Quit
+INFO [15:02:44 09-Mar-20 EDT][sys] Saving station...
+INFO [15:02:45 09-Mar-20 EDT][sys] Saved C:\ProgramData\Niagara4.6\Webs\stations\ESA_Chiller_Plant\config.bog (968ms)
+WARNING [15:02:45 09-Mar-20 EDT][bacnet.transport] Timeout due to interruption waiting for response!
+INFO [15:02:45 09-Mar-20 EDT][bacnet.client] TransactionException pinging BacnetDevice {ATC_49_2_C5}: Transaction:timeout: invoke ID 0
+INFO [15:02:45 09-Mar-20 EDT][bacnet.transport] Exception in CSM.process:transaction=null apdu=Confirmed-Request-PDU:
+	SEG = false
+	MOR = false
+	SA = true
+	Max Resp = 480
+	Invoke ID = 0
+	Service Choice = readProperty
+	Service Request (length) = 7
+	0c0200c0341970
+	cadr=1000:00
+	sadr=1000:07
+	src=0
+	pri=Normal
+	der=true
+ exception:
+java.lang.NullPointerException
+	at com.tridium.bacnet.stack.link.ip.BBacnetIpLinkLayer.sendBvllMessage(BBacnetIpLinkLayer.java:1886)
+	at com.tridium.bacnet.stack.link.ip.BBacnetIpLinkLayer.sendRequest(BBacnetIpLinkLayer.java:1122)
+	at com.tridium.bacnet.stack.network.BNetworkPort.sendToLink(BNetworkPort.java:659)
+	at com.tridium.bacnet.stack.network.BBacnetNetworkLayer.issueWhoIsRouterToNetwork(BBacnetNetworkLayer.java:1627)
+	at com.tridium.bacnet.stack.network.BBacnetNetworkLayer.issueWhoIsRouterToNetwork(BBacnetNetworkLayer.java:1610)
+	at com.tridium.bacnet.stack.network.BBacnetNetworkLayer.sendRequest(BBacnetNetworkLayer.java:681)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine.sendConfirmedRequestUnsegmented(ClientStateMachine.java:913)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine.sendConfirmedRequest(ClientStateMachine.java:895)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine.access$100(ClientStateMachine.java:28)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine$Idle.processApplication(ClientStateMachine.java:149)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine$Idle.process(ClientStateMachine.java:113)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine.process(ClientStateMachine.java:53)
+	at com.tridium.bacnet.stack.transport.ClientStateMachine.route(ClientStateMachine.java:35)
+	at com.tridium.bacnet.stack.transport.ApplicationPdu.run(ApplicationPdu.java:89)
+	at javax.baja.util.Worker.process(Worker.java:168)
+	at javax.baja.util.Worker$Processor.run(Worker.java:141)
+	at java.lang.Thread.run(Thread.java:748)
+SEVERE [15:02:45 09-Mar-20 EDT][bacnet.transport] Transaction abandoned! invokeId 0 exception:java.lang.NullPointerException
+SEVERE [15:02:45 09-Mar-20 EDT][sys.engine] Cannot activate link "Indirect: h:e520.CT3_V50_VS_out_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink1.Vibe_Tower_3_presentValue": Source slot does not exist
+INFO [15:02:45 09-Mar-20 EDT][bacnet.client] TransactionException pinging BacnetDevice {ATC_49_2_C6}: Transaction:abandoned: invoke ID 0
+SEVERE [15:02:45 09-Mar-20 EDT][sys.engine] Cannot activate link "Indirect: h:e520.CT3_V50_VfdAlm_out_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink2.Fault_Tower_3_presentValue": Source slot does not exist
+SEVERE [15:02:45 09-Mar-20 EDT][sys.engine] Cannot activate link "Indirect: h:e520.CT4_V50_VS_out_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink3.Vibe_Tower_4_presentValue": Source slot does not exist
+SEVERE [15:02:45 09-Mar-20 EDT][sys.engine] Cannot activate link "Indirect: h:e520.CT4_V50_VfdAlm_out_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink4.Fault_Tower_4_presentValue": Source slot does not exist
+SEVERE [15:02:45 09-Mar-20 EDT][sys.engine] Cannot activate link "Indirect: h:e520.AV_CT3_ValveFault_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink5.Fault_Valve_3_presentValue": Source slot does not exist
+SEVERE [15:02:45 09-Mar-20 EDT][sys.engine] Cannot activate link "Indirect: h:e520.BV_CT4_ValveFault_presentValue -> slot:/Drivers/BacnetNetwork/ATC_V50_CT_C2/obsolete_link_list/obsoletelink6.Fault_Valve_4_presentValue": Source slot does not exist
+SEVERE [15:02:46 09-Mar-20 EDT][sys.engine] Cannot activate link "Indirect: h:ea8e.BV_HX_Flow_OK_presentValue -> slot:/Drivers/BacnetNetwork/ATC_49_2_C1/obsolete_link_list/obsoletelink1.HX_Flow_Ok_presentValue": Source slot does not exist
+INFO [15:02:46 09-Mar-20 EDT][sys] Station stopped
+INFO [15:02:46 09-Mar-20 EDT][fox] Service stopped
+INFO [15:02:46 09-Mar-20 EDT][fox] FOX server stopped on port [1911]
+INFO [15:02:46 09-Mar-20 EDT][fox] FOXS server stopped on port [4911]
+INFO [15:02:46 09-Mar-20 EDT][web] Jetty stopped.
+INFO [15:02:48 09-Mar-20 EDT][sys] Services stopped
+INFO [15:02:48 09-Mar-20 EDT][sys] *** Station shutdown ***
+
+

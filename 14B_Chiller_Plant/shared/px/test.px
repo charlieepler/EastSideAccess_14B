@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1920.0,1080.0">
+
+    <Label layout="180.0,200.0,210.0,80.0" text="CHS_1_sts" font="36.0pt SansSerif" halign="left"/>
+
+    <BoundLabel layout="390.0,200.0,350.0,80.0" font="36.0pt SansSerif">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_49_2_C5/points/CHS_1_sts" statusEffect="color">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="180.0,310.0,210.0,80.0" text="CHS_1_ena" font="36.0pt SansSerif" halign="left"/>
+
+    <BoundLabel layout="390.0,310.0,350.0,80.0" font="36.0pt SansSerif">
+      <BoundLabelBinding ord="station:|slot:/Drivers/BacnetNetwork/ATC_49_2_C5/points/CHS_1_ena" statusEffect="color">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

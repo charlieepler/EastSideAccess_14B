@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1920.0,140.0">
+
+    <Label layout="10.0,5.0,183.0,132.0" image="file:^px/Images/ESA Logo.png"/>
+
+    <BackButton layout="310.0,55.0,100.0,30.0" image="module://icons/x16/arrowLeft.png">
+      <WsAnnotation name="wsAnnotation" value="26,26,8"/>
+    </BackButton>
+
+    <BoundLabel layout="310.0,25.0,100.0,20.0" text="Home" background="#e0e0e0">
+      <BoundLabelBinding hyperlink="file:^px/Home.px"/>
+      <WsAnnotation name="wsAnnotation" value="2,2,8"/>
+    </BoundLabel>
+
+    <BoundLabel layout="510.0,20.0,250.0,70.0" text="Site&#xa;Name" font="24.0pt SansSerif" foreground="#0039a6" border="1.0 solid black">
+      <WsAnnotation name="wsAnnotation" value="2,2,8"/>
+    </BoundLabel>
+
+    <BoundLabel layout="870.0,30.0,140.0,50.0" font="18.0pt SansSerif" foreground="#0039a6">
+      <WsAnnotation name="wsAnnotation" value="2,2,8"/>
+      <BoundLabelBinding ord="station:|slot:/Logic/CurrentTime">
+        <ObjectToString name="text" format="%out.date%\n%out.time%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

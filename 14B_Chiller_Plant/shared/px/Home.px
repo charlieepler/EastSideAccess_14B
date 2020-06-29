@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1920.0,1080.0">
+
+    <PxInclude layout="0.0,0.0,1920.0,140.0" ord="file:^px/Header.px"/>
+
+    <Label layout="520.0,100.0,228.0,30.0" text="Main Page" font="24.0pt SansSerif"/>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>
